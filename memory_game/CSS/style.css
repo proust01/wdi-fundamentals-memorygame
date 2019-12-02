@@ -27,11 +27,17 @@ nav {
 
 a {
     font-family: "Raleway", sans-serif;
+    text-decoration: none;
     color: #ffffff;
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 18px;
     margin: 0 20px;
+    border-bottom: 2px solid tranparent;
+}
+
+a:hover {
+    border-color: white;
 }
 
 main {
@@ -52,8 +58,42 @@ p {
     font-family: "Droid Serif", serif;
     line-height: 26px;
     font-size: 18px;
+    font-family: raleway;
 }
 
 img {
     margin: 40px 8px;
+}
+
+
+.name {
+    color: #F15B31;
+    font-weight: 700;
+}
+
+footer {
+    text-transform: uppercase;
+    padding: 0 20px;
+    background: #0D2C40;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .08em;
+    font-weight: 500;
+}
+
+.copyright {
+    float: left;
+}
+
+.message {
+    float: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
 }
