@@ -33,20 +33,20 @@ function flipCard() {
     return;
 }
 
-var cardElement = document.createElement('img');
-var backCard = [];
 
 function createBoard() {
     for(var i=0; i<cards.length; i++) {
+        var cardElement = document.createElement('img');
         cardElement.setAttribute('src', "images/back.png");
         cardElement.setAttribute('data-id', i);
-        backCard.push(cardElement);
         cardElement.addEventListener('click', flipCard);
-        document.getElementById('game-board').appendChild(backCard[i]);
+        document.getElementById('game-board').appendChild(cardElement);
         console.log(i);
-        console.log(backCard);
+        console.log(cardElement);
     }
 }
 
 
 createBoard();
+
+console.log(cardsInPlay);
